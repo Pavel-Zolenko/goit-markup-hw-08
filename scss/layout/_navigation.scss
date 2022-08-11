@@ -1,0 +1,76 @@
+.nav-container {
+    align-items: center;
+    display: flex;
+}
+
+.nav {
+    margin-left: 93px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: block;
+    color: var(--title-txt-cl);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+&--current {
+    color: var(--accent-color);
+    position: relative;
+}
+
+&--current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+    }
+
+.auth-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 50px;
+}
+
+.auth-nav__contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-txt-cl);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+}
+
+.auth-nav__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

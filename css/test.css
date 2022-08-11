@@ -1,0 +1,30 @@
+body {
+    padding: 50px;
+}
+
+.contact-form-group {
+    position: relative;
+}
+.contact-form-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    transition: transform 250ms;
+}
+
+.contact-form-input {
+    height: 40px;
+    border: transparent;
+    border-bottom: 1px solid blue;
+    outline: transparent;
+}
+.contact-form-input::placeholder {
+    color: transparent;
+}
+.contact-form-input:focus + .contact-form-label {
+    transform: translateY(-30px) scale(0.8);
+}
+.contact-form-input:focus::placeholder {
+    color: currentColor;
+}
