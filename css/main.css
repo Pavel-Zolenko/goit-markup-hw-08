@@ -56,16 +56,36 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .hero__btn {
@@ -544,10 +564,15 @@ img {
   background-position: center;
 }
 
-.Benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .Benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .benefits__wrap {
@@ -560,31 +585,59 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--secondary-bg-cl);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__wrap {
+    width: 354px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__wrap {
+    width: 270px;
+    height: 120px;
+  }
+}
 
 .Benefits__title {
-  color: var(--title-txt-cl);
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--title-txt-cl);
+}
+@media screen and (max-width: 767px) {
+  .Benefits__title {
+    text-align: center;
+  }
 }
 
 .Benefits__text {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
-  max-width: 270px;
   margin-top: 10px;
   color: var(--primary-txt-cl);
 }
+@media screen and (min-width: 768px) {
+  .Benefits__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Benefits__text {
+    width: 270px;
+  }
+}
 
-.benefits__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .work-section {
