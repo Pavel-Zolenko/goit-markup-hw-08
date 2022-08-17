@@ -1,5 +1,23 @@
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
+
+}
+
 .portfolio-list__item {
-    width: 370px;
+        
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 30px) / 2);
+       }
+
+     @media screen and (min-width: 1200px) and (max-width: 1199px) {
+               flex-basis: calc((100% - 60px) / 3);
+        }
 }
 
 .portfolio-list__link {
@@ -29,11 +47,6 @@
 
 }
 
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
 
 .container-item {
     position: relative;
