@@ -11,11 +11,12 @@
 
 .portfolio-list__item {
         
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 30px) / 2);
+        
        }
 
-     @media screen and (min-width: 1200px) and (max-width: 1199px) {
+     @media screen and (min-width: 1200px) {
                flex-basis: calc((100% - 60px) / 3);
         }
 }
@@ -29,8 +30,9 @@
     &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-
+       
 }
+
 
 .portfolio-list__title {
     font-size: 18px;
