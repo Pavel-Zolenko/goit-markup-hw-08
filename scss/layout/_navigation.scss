@@ -1,12 +1,17 @@
 .nav-container {
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         align-items: center;
         justify-content: space-between;
         
-    }   
-}
+    }  
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
+} 
+
 
 .nav {
     @media screen and (max-width: 767px) {
@@ -75,7 +80,7 @@
     @media screen and (min-width: 1200px) {
        flex-direction: row;
        gap: 30px;
-
+        margin-left: auto;
          }
 }
 
